@@ -497,7 +497,7 @@ if __name__ == "__main__":
         dummy_W2 = np.zeros((n_output, n_hidden), np.float32)
         for ep in range(1, 11):
             print(f" W1 epoch {ep}/10", flush=True)
-            pre_pool = mp.Pool(mp.cpu_count(),
+            pre_pool = mp.Pool(min(mp.cpu_count(), mp.cpu_count()*0.75),
                                initializer=init_pretrain_worker,
                                initargs=((X_train, dummy_W2, W1_shm, W1_shape, W1_lock),))
             pools.append(pre_pool)
@@ -510,7 +510,7 @@ if __name__ == "__main__":
             np.savetxt(args.w1_file, W1, delimiter=',')
             print(f"Saved pretrained W1 to {args.w1_file}")
 
-    pop_size = min(mp.cpu_count(), 18)
+    pop_size = min(mp.cpu_count(), mp.cpu_count() * 0.75)
     population = []
     for _ in range(pop_size):
         W2_init = np.random.uniform(w_min, w_max, (n_output, n_hidden)).astype(np.float32)
