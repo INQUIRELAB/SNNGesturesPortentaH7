@@ -1,4 +1,4 @@
-[![Watch the video](https://img.youtube.com/vi/GTWTZHz4MXo/hqdefault.jpg)](https://youtu.be/GTWTZHz4MXo)
+[![Video Presentation and Guide](https://img.youtube.com/vi/GTWTZHz4MXo/hqdefault.jpg)](https://youtu.be/GTWTZHz4MXo)
 
 
 # 🧠 SNNGesturesPortentaH7
