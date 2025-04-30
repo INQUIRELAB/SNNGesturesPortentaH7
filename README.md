@@ -1,3 +1,6 @@
+[![Watch the video](https://img.youtube.com/vi/GTWTZHz4MXo/hqdefault.jpg)](https://youtu.be/GTWTZHz4MXo)
+
+
 # 🧠 SNNGesturesPortentaH7
 
 Spiking Neural Network (SNN) for real-time gesture recognition using the **Arduino Portenta H7** and an **OV7670 camera**. This project implements biologically-inspired neural computing on edge hardware using radially invariant Fourier features extracted from video frames.
